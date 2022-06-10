@@ -9,15 +9,9 @@ import Typography from "@mui/material/Typography";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import CardActions from "@mui/material/CardActions";
 
-import {
-  BrowserRouter,
-  Navigate,
-  NavLink,
-  Route,
-  Router,
-  Routes,
-} from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate();
   const initialValues = {
     username: "",
     password: "",
@@ -45,7 +39,7 @@ const Login = () => {
       });
       console.log(response);
       // document.location.href ="/Home";
-      return <NavLink to="/Home" />;
+      navigate("/home");
     } catch (error) {
       console.log(error);
     }
