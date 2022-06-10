@@ -9,9 +9,8 @@ import Typography from "@mui/material/Typography";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import CardActions from "@mui/material/CardActions";
 
-import { useNavigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Login = () => {
-  const navigate = useNavigate();
   const initialValues = {
     username: "",
     password: "",

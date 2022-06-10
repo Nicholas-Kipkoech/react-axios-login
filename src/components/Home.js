@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
+import Navbar from "../components/navbar";
 const home = () => {
   return (
     <Grid
@@ -20,6 +21,7 @@ const home = () => {
               color="text.secondary"
               gutterBottom
             >
+              <Navbar />
               Welcome to Swipe X
             </Typography>
           </CardContent>
