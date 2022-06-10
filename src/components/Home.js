@@ -1,33 +1,16 @@
 import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/navbar";
 const home = () => {
   return (
-    <Grid
-      container
-      alignItems="center"
-      justify="center"
-      direction="column"
-      spacing={2}
-    >
-      <Grid item>
-        <Card>
-          <CardContent>
-            <Typography
-              sx={{ fontSize: 14 }}
-              color="text.secondary"
-              gutterBottom
-            >
-              <Navbar />
-              Welcome to Swipe X
-            </Typography>
-          </CardContent>
-        </Card>
-      </Grid>
-    </Grid>
+    <div className="container">
+      <div className="card">
+        <Navbar />
+        <div className="card-body">
+          <div className="card-text">Hello this is dashboard</div>
+        </div>
+      </div>
+    </div>
   );
 };
 
