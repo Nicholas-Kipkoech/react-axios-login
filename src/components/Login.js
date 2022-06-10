@@ -38,8 +38,9 @@ const Login = () => {
         headers: { "Content-Type": "application/json" },
       });
       console.log(response);
-      // document.location.href ="/Home";
-      navigate("/home");
+      if (response.status == 200) {
+        window.location = "/Home";
+      }
     } catch (error) {
       console.log(error);
     }

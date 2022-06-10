@@ -5,7 +5,6 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-
 function App() {
   return (
     <div className="App">
@@ -15,7 +14,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Login />} />
         <Route exact path="/register" element={<Register />} />
-        <Route path="/Home" component={<Home />} />
+        <Route exaxt path="/Home" element={<Home />} />
       </Routes>
     </div>
   );
